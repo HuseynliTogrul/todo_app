@@ -1,0 +1,24 @@
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    /* width: 100%; */
+    border: 1px solid;
+    background: aliceblue;
+}
+
+.todoIcon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.todoIcon:first-child {
+    color: red;
+}
+
+.todoIcon:last-child {
+    color: #ffcf00;
+}
