@@ -25,12 +25,12 @@ function Todo({ todo, onRemoveTodo, onUpdateTodo }) {
 
     return (
         <div className='todo'>
-            <div>
+            <div style={{ overflow: 'hidden', marginRight: '10px' }} >
                 {
                     editable ? <input
                         value={newTodo}
                         onChange={(e) => setNewTodo(e.target.value)}
-                        style={{ width: '380px', background: 'aliceblue' }}
+                        style={{ width: '380px', background: 'aliceblue', overflow: 'hidden' }}
                         className='todo-input' type="text" />
                         : content
                 }

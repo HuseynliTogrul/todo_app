@@ -23,11 +23,18 @@ function TodoCreate({ onCreateTodo }) {
         clearTodo();
     }
 
+    const handleKeyDown = (e) => {
+        if (e.key === "Enter") {
+            createTodo()
+        }
+    }
+
     return (
         <div className='todo-create'>
             <input
                 value={newTodo}
                 onChange={(e) => setNewTodo(e.target.value)}
+                onKeyDown={handleKeyDown}
                 className='todo-input' type="text" placeholder='Todo enter...' />
             <button onClick={createTodo} className='todo-btn'>Todo create</button>
         </div>
