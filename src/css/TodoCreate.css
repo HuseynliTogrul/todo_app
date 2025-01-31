@@ -1,10 +1,8 @@
 .todo-create {
-    /* padding: 20px 15px; */
-    /* background: gainsboro; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 100%;
+    width: 500px;
     margin-top: 30px;
     gap: 15px;
     border-radius: 7px;
@@ -12,18 +10,27 @@
 
 .todo-input {
     width: 100%;
-    padding: 10px 0 10px;
+    padding: 5px 0;
     border: none;
     outline: none;
     border-bottom: 1px solid;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
 }
 
 .todo-btn {
-    /* width: fit-content; */
     border: none;
     background: #006b98f7;
     color: white;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 641px) {
+    .todo-create {
+        width: 90%;
+    }
+
 }

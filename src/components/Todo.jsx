@@ -30,7 +30,7 @@ function Todo({ todo, onRemoveTodo, onUpdateTodo }) {
                     editable ? <input
                         value={newTodo}
                         onChange={(e) => setNewTodo(e.target.value)}
-                        style={{ width: '380px', background: 'aliceblue', overflow: 'hidden' }}
+                        style={{ width: '380px', overflow: 'hidden' }}
                         className='todo-input' type="text" />
                         : content
                 }
